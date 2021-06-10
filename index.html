@@ -25,43 +25,12 @@
 <body>
 
 <div id="container">
-
-    <h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC samples</a>
-        <span>MediaRecorder</span></h1>
-
-    <p>For more information see the MediaStream Recording API <a
-            href="http://w3c.github.io/mediacapture-record/MediaRecorder.html"
-            title="W3C MediaStream Recording API Editor's Draft">Editor's&nbsp;Draft</a>.</p>
-
     <video id="gum" playsinline autoplay muted></video>
     <video id="recorded" playsinline loop></video>
-
     <div>
-        <button id="start">Start camera</button>
         <button id="record">Start Recording</button>
-        <button id="play" disabled>Play</button>
-        <button id="download" disabled>Download</button>
+        <!-- <button id="stop">Stop Recording</button> -->
     </div>
-
-    <div>
-        Recording format: <select id="codecPreferences" disabled></select>
-    </div>
-    <div>
-        <h4>Media Stream Constraints options</h4>
-        <p>Echo cancellation: <input type="checkbox" id="echoCancellation"></p>
-    </div>
-
-    <div>
-        <span id="errorMsg"></span>
-    </div>
-
-    <a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/record"
-       title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-       <h2 class="header">Record Video and convert into "mp4" using <a href="https://archive.org/download/ffmpeg_asm/ffmpeg_asm.js" download="ffmpeg-asm.js">ffmpeg-asm.js</a>!</h2>
-       <div class="inner">
-           <video id="video-preview" controls></video>
-       </div>
-       
 </div>
 
 <!-- include adapter for srcObject shim -->
@@ -70,7 +39,7 @@
 src="https://code.jquery.com/jquery-3.6.0.js"
 integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
 crossorigin="anonymous"></script>
-<script type="text/javascript" src="./MediaStreamRecorder.min.js" async></script>
+<!-- <script type="text/javascript" src="./MediaStreamRecorder.min.js" async></script> -->
 <script type="text/javascript" src="./index.js" async></script>
 
 
