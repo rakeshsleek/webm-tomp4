@@ -12,8 +12,9 @@ $image='http://'.$base_url.'/webm-tomp4/uploads/video_logo.png';
 
 move_uploaded_file($_FILES['files']['tmp_name'], $filePath );  
 
-$command='C:\ffmpeg\bin\ffmpeg -i http://'.$base_url.'/webm-tomp4/uploads/'.$fileName.' -i '.$image.'  -filter_complex "overlay=5:5" '.$fileName.' ';
+$command='./usr/bin/ffmpeg -i http://'.$base_url.'/webm-tomp4/uploads/'.$fileName.' -i '.$image.'  -filter_complex "overlay=5:5" '.$fileName.' ';
 // execute the command
+echo $command;
 system($command,$output);
 if($output==0){
 
