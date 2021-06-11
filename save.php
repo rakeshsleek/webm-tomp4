@@ -15,8 +15,8 @@ $command='C:\ffmpeg\bin\ffmpeg -i http://'.$base_url.'/webm-tomp4/uploads/'.$fil
 // execute the command //
 system($command,$output);
 
-$command2='C:\ffmpeg\bin\ffmpeg -i '.$fileName.' vf drawtext="fontfile=C\\:/Windows/Fonts/arial.ttf:fontsize=20: fontcolor=red:x=100:y=100:text="HELLO"" '.$fileName.' ';
-system($command2,$output);
+// $command2='C:\ffmpeg\bin\ffmpeg -i '.$fileName.' vf drawtext="fontfile=C\\:/Windows/Fonts/arial.ttf:fontsize=20: fontcolor=red:x=100:y=100:text="HELLO"" '.$fileName.' ';
+// system($command2,$output);
 
 // ffmpeg -i video.mp4 -vf drawtext="fontfile=C\\:/Windows/Fonts/arial.ttf:fontsize=20: fontcolor=red:x=10:y=10:text='HELLO'"  output.mp4
 
