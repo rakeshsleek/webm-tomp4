@@ -1166,7 +1166,7 @@ var Whammy = function () {
 }(), "undefined" != typeof module && (module.exports = MediaStreamRecorder), "function" == typeof define && define.amd && define("MediaStreamRecorder", [], function () {
   return MediaStreamRecorder;
 });
-},{}],"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+},{}],"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -5003,16 +5003,16 @@ define(function (require) {
 (1)
 });
 ;
-},{"process":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
+},{"process":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
 
-},{}],"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/support/isBufferBrowser.js":[function(require,module,exports) {
+},{}],"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/support/isBufferBrowser.js":[function(require,module,exports) {
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/node_modules/inherits/inherits_browser.js":[function(require,module,exports) {
+},{}],"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/node_modules/inherits/inherits_browser.js":[function(require,module,exports) {
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -5037,7 +5037,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/util.js":[function(require,module,exports) {
+},{}],"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/util.js":[function(require,module,exports) {
 var process = require("process");
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -5758,7 +5758,7 @@ function callbackify(original) {
 }
 
 exports.callbackify = callbackify;
-},{"./support/isBuffer":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/support/isBufferBrowser.js","inherits":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/node_modules/inherits/inherits_browser.js","process":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/ffmpeg/lib/errors.js":[function(require,module,exports) {
+},{"./support/isBuffer":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/support/isBufferBrowser.js","inherits":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/node_modules/inherits/inherits_browser.js","process":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/ffmpeg/lib/errors.js":[function(require,module,exports) {
 var util = require('util');
 
 // Error list with code and message
@@ -5794,7 +5794,7 @@ var renderError = function (codeName) {
 
 module.exports.list = list;
 module.exports.renderError = renderError;
-},{"util":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/util.js"}],"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/path-browserify/index.js":[function(require,module,exports) {
+},{"util":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/util/util.js"}],"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/path-browserify/index.js":[function(require,module,exports) {
 var process = require("process");
 // .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
 // backported and transplited with Babel, with backwards-compat fixes
@@ -6099,7 +6099,7 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-},{"process":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/ffmpeg/lib/utils.js":[function(require,module,exports) {
+},{"process":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/ffmpeg/lib/utils.js":[function(require,module,exports) {
 var process = require("process");
 var exec	= require('child_process').exec
   , fs		= require('fs')
@@ -6233,7 +6233,7 @@ module.exports.in_array = function (value, array) {
 	// The value not exists
 	return false;
 }
-},{"child_process":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","fs":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","path":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/path-browserify/index.js","./errors":"node_modules/ffmpeg/lib/errors.js","process":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/ffmpeg/lib/configs.js":[function(require,module,exports) {
+},{"child_process":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","fs":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","path":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/path-browserify/index.js","./errors":"node_modules/ffmpeg/lib/errors.js","process":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/ffmpeg/lib/configs.js":[function(require,module,exports) {
 /**
  * Basic configuration
  */
@@ -7150,7 +7150,7 @@ module.exports = function (filePath, settings, infoConfiguration, infoFile) {
 		resetCommands(self);
 	}(this);
 }
-},{"fs":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","path":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/path-browserify/index.js","when":"node_modules/when/dist/browser/when.js","./errors":"node_modules/ffmpeg/lib/errors.js","./presets":"node_modules/ffmpeg/lib/presets.js","./utils":"node_modules/ffmpeg/lib/utils.js"}],"node_modules/ffmpeg/lib/ffmpeg.js":[function(require,module,exports) {
+},{"fs":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","path":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/path-browserify/index.js","when":"node_modules/when/dist/browser/when.js","./errors":"node_modules/ffmpeg/lib/errors.js","./presets":"node_modules/ffmpeg/lib/presets.js","./utils":"node_modules/ffmpeg/lib/utils.js"}],"node_modules/ffmpeg/lib/ffmpeg.js":[function(require,module,exports) {
 var when		= require('when')
   , fs			= require('fs');
 
@@ -7402,7 +7402,7 @@ var ffmpeg = function (/* inputFilepath, settings, callback */) {
 };
 
 module.exports = ffmpeg;
-},{"when":"node_modules/when/dist/browser/when.js","fs":"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","./errors":"node_modules/ffmpeg/lib/errors.js","./utils":"node_modules/ffmpeg/lib/utils.js","./configs":"node_modules/ffmpeg/lib/configs.js","./video":"node_modules/ffmpeg/lib/video.js"}],"node_modules/ffmpeg/index.js":[function(require,module,exports) {
+},{"when":"node_modules/when/dist/browser/when.js","fs":"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/_empty.js","./errors":"node_modules/ffmpeg/lib/errors.js","./utils":"node_modules/ffmpeg/lib/utils.js","./configs":"node_modules/ffmpeg/lib/configs.js","./video":"node_modules/ffmpeg/lib/video.js"}],"node_modules/ffmpeg/index.js":[function(require,module,exports) {
 module.exports = require('./lib/ffmpeg');
 },{"./lib/ffmpeg":"node_modules/ffmpeg/lib/ffmpeg.js"}],"watermark.js":[function(require,module,exports) {
 "use strict";
@@ -7711,7 +7711,7 @@ function uploadfile(blob, filename, callback) {
   formData.append('filename', filename);
   $.ajax({
     type: 'POST',
-    url: 'https://testofy.localhost/assessment/index/test',
+    url: 'http://localhost/webm-tomp4/save.php',
     data: formData,
     processData: false,
     contentType: false,
@@ -7738,7 +7738,7 @@ recordButton.addEventListener('click', function () {
 //         //captureUserMedia(mediaConstraints, onMediaSuccess, onMediaError);
 //     } 
 // });
-},{"./MediaStreamRecorder.min.js":"MediaStreamRecorder.min.js","./watermark.js":"watermark.js","ffmpeg":"node_modules/ffmpeg/index.js"}],"C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./MediaStreamRecorder.min.js":"MediaStreamRecorder.min.js","./watermark.js":"watermark.js","ffmpeg":"node_modules/ffmpeg/index.js"}],"C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -7766,7 +7766,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56226" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56561" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -7942,5 +7942,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/RAKESH/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/record.e31bb0bc.js.map
+},{}]},{},["C:/Users/Arnab/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+//# sourceMappingURL=/webm-tomp4.e31bb0bc.js.map

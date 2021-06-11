@@ -220,7 +220,7 @@ function uploadfile(blob,filename, callback){
   formData.append('filename',filename);
   $.ajax({
       type: 'POST',
-      url : 'https://testofy.localhost/assessment/index/test',
+      url : 'http://localhost/webm-tomp4/save.php',
       data: formData,
       processData: false,
       contentType: false,
