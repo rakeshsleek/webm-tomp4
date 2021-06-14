@@ -6,11 +6,13 @@ ini_set('display_errors', 0);
 
 
 $fileName=$_FILES['files']['name'];
-
+$filePath = 'uploads/' . $fileName;
+$base_url=$_SERVER['SERVER_NAME'];
+$image='http://'.$base_url.'/webm-tomp4/uploads/video_logo.png';
+$output_file='output'.$fileName.'.mp4';
 
 
 ////////////////////// static data//////////////////////
-
 $data['assessment_user_name']='Arnab Nath';
 $data['device']='Computer';
 $data['ipaddress']='127.0.2.1';
