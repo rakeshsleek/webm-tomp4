@@ -13,17 +13,17 @@ $output_file='output'.$fileName.'.mp4';
 
 
 ////////////////////// static data//////////////////////
+
 $data['assessment_user_name']='Arnab Nath';
 $data['device']='Computer';
 $data['ipaddress']='127.0.2.1';
 $vtime=strtotime(date('Y-m-d H:i:s'));
 
-
-//////////////////// Upload file specific folder/////////////////////////
+///////////////////////// Upload file specific folder/////////////////////////
 
 move_uploaded_file($_FILES['files']['tmp_name'], $filePath );  
 
-//////////////////// Upload file specific folder/////////////////////////
+///////////////////////// Upload file specific folder/////////////////////////
 
 //////////////////////// execute the command  first for logo added then the text on the video////////////////////////////
 
@@ -36,12 +36,14 @@ system($command2,$output2);
 //////////////////////// execute the command ////////////////////////////
 
 //////////////////////// unlink the output file and uploiad the final file to main folder ////////////////////////////
+
 unlink($output_file);
 
 if($output2==0){
     $destinationPath='uploads/'.$fileName;
     rename($fileName,$destinationPath);
 }
+
 //////////////////////// unlink the output file and uploiad the final file to main folder ////////////////////////////
 
 echo "Overlay has been added";exit;
