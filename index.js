@@ -214,10 +214,17 @@ function stopVideo(){
 function stopRecording() {
     mediaRecorder.stop();
   }
+function randomNumber(min,max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+var glob_customer_id=randomNumber(1,1000);
+
 function uploadfile(blob,filename, callback){
+    
   var formData = new FormData();
   formData.append('files', blob);
   formData.append('filename',filename);
+  formData.append('customer_id',glob_customer_id);
   $.ajax({
       type: 'POST',
       url : 'http://localhost/webm-tomp4/save.php',
