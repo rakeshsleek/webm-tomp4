@@ -10,12 +10,13 @@ $base_url=$_SERVER['SERVER_NAME'];
 $image='http://'.$base_url.'/webm-tomp4/uploads/video_logo.png';
 $output_file='output'.$fileName.'.mp4';
 $customer_id=$_REQUEST['customer_id'];
-$filePath = 'uploads/' .$customer_id.'/'.$fileName;
 
 
 if($_SESSION['customer_id']==""){
     $_SESSION['customer_id']=$customer_id;
     mkdir('uploads/'.$customer_id);
+}else{
+    $customer_id=$_SESSION['customer_id'];
 }
 
 
@@ -29,6 +30,7 @@ $vtime=strtotime(date('Y-m-d H:i:s'));
 
 ///////////////////////// Upload file specific folder/////////////////////////
 
+$filePath = 'uploads/' .$customer_id.'/'.$fileName;
 move_uploaded_file($_FILES['files']['tmp_name'], $filePath );  
 
 ///////////////////////// Upload file specific folder/////////////////////////
